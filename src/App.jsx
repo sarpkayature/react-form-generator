@@ -1,4 +1,4 @@
-import { XormInput } from "./react-form-generator/index";
+import { FormGenerator } from "./react-form-generator/Form/FormGenerator";
 
 const App = () => {
   const onSubmit = (data) => console.log(data);
@@ -23,18 +23,7 @@ const App = () => {
       ],
     },
   };
-  return (
-    <div className='App'>
-      <XormInput
-        name='city'
-        label='City'
-        defaultValues={{ city: "Istanbul" }}
-        id='city'
-        onSubmit={onSubmit}
-      />
-      <input type='submit' form='city' value='Submit' />
-    </div>
-  );
+  return <div className='App'></div>;
 };
 
 export default App;
